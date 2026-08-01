@@ -1,7 +1,25 @@
 aid: resourcely
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/resourcely.png
 name: Resourcely
-description: Resourcely is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Resourcely is an a16z-backed company reachable at resourcely.io, surfaced as a portfolio
+  lead and added to the API Evangelist network for enrichment. Its public web presence is
+  served on Webflow with Google Workspace email (SPF/DMARC configured). As of this enrichment
+  pass no public developer API, OpenAPI specification, documentation portal, first-party
+  SDK/CLI packages, or status/trust subdomains were discoverable, and its former documentation
+  host (docs.resourcely.io) no longer resolves, so this remains an identity-and-security
+  profile rather than a scored API surface.
 url: https://raw.githubusercontent.com/api-evangelist/resourcely/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,24 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Startup
+- Venture Backed
+- a16z
+- Portfolio
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 apis: []
+common:
+- type: DomainSecurity
+  url: security/resourcely-domain-security.yml
+- type: Website
+  url: https://www.resourcely.io/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
