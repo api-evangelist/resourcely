@@ -43,13 +43,11 @@ created: '2026-07-17'
 modified: '2026-07-20'
 tags:
 - Company
-- Startups
 - Venture Backed
 - a16z
 - Portfolio
 tags_raw:
 - Company
-- Startup
 - Venture Backed
 - a16z
 - Portfolio
@@ -69,3 +67,7 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-tags-removed:
+- Startups
+x-company-stage: venture-backed
+x-company-stage-evidence: "own tags: Startup, Venture Backed, a16z, Portfolio"
